@@ -81,7 +81,7 @@ no_of_objects=len(listy)*len(listx)/4
 #the rest is to shape these parts into images. and write trivial functions to trim further.
 #and then we run the predictor!
 
-for i in range(no_of_objects):
+for i in range(int(no_of_objects)):
     rect = (listx[2*i-1], listy[2*i-1], listx[2*i],listy[2*i])
     #now, we have a bounding rectangle around the object, 
     #the image processing code goes here.
